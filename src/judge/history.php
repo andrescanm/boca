@@ -124,6 +124,7 @@ else echo "0%)<br>\n";
 echo "Accepted runs that I've judged: " . $myyes . "/" . $yes . " (";
 if($yes>0) echo ((int) ($myyes*1000/$yes))/10 ."%)<br>\n";
 else echo "0%)<br>\n";
+include 'include/completionBody.php';
 ?>
 </body>
 </html>

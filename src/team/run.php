@@ -427,8 +427,7 @@ if($redo) {
   @rename($runtmp . "_" . $randnum, $runtmp);
 }
 echo $strtmp;
+include 'include/completionBody.php';
 ?>
-
-
 </body>
 </html>

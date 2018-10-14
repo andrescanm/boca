@@ -72,5 +72,6 @@ echo "</table>\n";
 <a href="log.php?limit=200<?php echo $get; ?>">200</a>
 <a href="log.php?limit=1000<?php echo $get; ?>">1000</a>
 <a href="log.php?limit=1000000<?php echo $get; ?>">no limit</a>
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

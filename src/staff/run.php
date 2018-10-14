@@ -195,5 +195,6 @@ echo " <a href=\"#\" class=menu style=\"font-weight:bold\" onClick=\"window.open
                 "resizable=yes')\">Statistics</a><br />\n";
 }
 ?>
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

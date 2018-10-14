@@ -118,6 +118,6 @@ function computeHASH()
       <input type="submit" name="Submit" value="Send">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

@@ -116,6 +116,6 @@ function computeHASH()
       <input type="reset" name="Submit2" value="Clear">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

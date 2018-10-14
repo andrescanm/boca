@@ -447,6 +447,6 @@ To replace the data of a problem, proceed as if it did not exist (data will be r
       <input type="submit" name="Submit5" value="Build">
 </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

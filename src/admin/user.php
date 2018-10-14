@@ -209,7 +209,7 @@ else if (isset($_FILES["importfile"]) && isset($_POST["Submit"]) && $_FILES["imp
 						echo "<tr><td>" . $x[0] . "</td><td>" . $x[1] . "</td><td>$pass</td></tr>\n";
 					}
 ?>
-</table><br><br><u><b>TAKE NOTE OF THE USERS AND PASSWORDS AND KEEP THEM SECRET</b></u></center></body></html>
+</table><br><br><u><b>TAKE NOTE OF THE USERS AND PASSWORDS AND KEEP THEM SECRET</b></u></center><?php include 'include/completionBody.php';?></body></html>
 <?php
 	  exit;
 				}
@@ -501,6 +501,6 @@ echo $u["userdesc"]; } ?>" size="50" maxlength="300" />
 <?php } ?>
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

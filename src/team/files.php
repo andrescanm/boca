@@ -118,6 +118,6 @@ To submit a new backup file, just fill in the following fields:</b></center>
       <input type="submit" name="Submit" value="Send" onClick="conf()">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

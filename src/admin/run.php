@@ -178,6 +178,7 @@ else {
   </form>
 <?php
 }
+include '../include/completionBody.php';
 ?>
 </body>
 </html>

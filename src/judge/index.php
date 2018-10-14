@@ -17,6 +17,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Last modified 05/aug/2012 by cassio@ime.usp.br
 require('header.php');
+include 'include/completionBody.php';
 ?>
 </body>
 </html>

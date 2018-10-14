@@ -143,6 +143,7 @@ if(isset($_POST["Submit"])) {
 			$ar = decryptData($str,$_POST['password'],'importxml');
 			if(strtoupper(substr($ar,0,5)) != '<XML>') {
 				echo "<br>Error decrypting file. Import aborted.<br>";
+				include 'include/completionBody.php';
 				echo "</body></html>";
 				exit;
 			}
@@ -152,6 +153,7 @@ if(isset($_POST["Submit"])) {
 //			echo "<pre>\n$ar</pre>\n";
 			if(!importFromXML($ar,$acr,0,$localsite))
 				echo "<br>Error during updating of the local database.<br>";
+			include 'include/completionBody.php';
 			echo "</body></html>";
 			exit;
 		}
@@ -240,6 +242,6 @@ function computeHASH()
       <input type="reset" name="Submit2" value="Clear">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

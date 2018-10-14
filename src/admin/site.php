@@ -267,7 +267,7 @@ if ($main && isset($_FILES["importfile"]) && isset($_POST["Submit"]) && $_POST["
 							echo "<tr><td>$user</td><td>$pass</td></tr>\n";
 						}
 ?>
-</table><br><br><u><b>TAKE NOTE OF THE USERS AND PASSWORDS AND KEEP THEM SECRET</b></u></center></body></html>
+</table><br><br><u><b>TAKE NOTE OF THE USERS AND PASSWORDS AND KEEP THEM SECRET</b></u></center><?php include 'include/completionBody.php';?></body></html>
 <?php
 	  exit;
 					}
@@ -622,6 +622,6 @@ if($main) {
 </form>
 </div>
 </div>
-    
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

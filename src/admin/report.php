@@ -92,6 +92,6 @@ if (isset($_GET)) {
 ?>
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

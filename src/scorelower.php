@@ -39,7 +39,7 @@ if ($s["currenttime"] >= $s["sitelastmilescore"] && $ver)
 	echo "<br><center>Scoreboard frozen</center>";
 
 require('scoretable.php');
+include 'include/completionBody.php';
 ?>
-
 </body>
 </html>

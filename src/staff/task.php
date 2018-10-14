@@ -163,8 +163,7 @@ for ($i=0; $i<count($task); $i++) {
 }
 echo "</table>";
 if (!$anyprinted) echo "<br><center><b><font color=\"#ff0000\">NO TASKS FOUND</font></b></center>";
-
+include 'include/completionBody.php';
 ?>
-
 </body>
 </html>

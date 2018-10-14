@@ -124,6 +124,6 @@ Note that any changes will overwrite the already defined data.<br><br>
       <input type="reset" name="Submit4" value="Clear">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

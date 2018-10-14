@@ -316,5 +316,6 @@ if($a["autostderr"]!="") {
   </table></center>
 
 </form>
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

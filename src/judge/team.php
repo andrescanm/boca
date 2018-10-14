@@ -193,7 +193,6 @@ $strtmp .= "	  </select>\n".
 }
 echo $strtmp;
 ?>
-
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

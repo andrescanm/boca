@@ -35,9 +35,8 @@ $runeditphp = "runeditchief.php";
 echo "<html><head><title>Judge's Page</title>\n";
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 echo "<link rel=stylesheet href=\"../Css.php\" type=\"text/css\">\n";
+include 'include/completionHeader.php';
 
-//temporario!!!!
-//echo "<meta http-equiv=\"refresh\" content=\"60\" />";
 if(!ValidSession()) {
 	InvalidSession("judge/index.php");
         ForceLoad("../index.php");

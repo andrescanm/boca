@@ -296,6 +296,6 @@ echo $contest;
 <?php } ?>
 	   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

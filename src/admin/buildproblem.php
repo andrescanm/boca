@@ -103,6 +103,6 @@ To build a problem package using standard script files, fill in the following fi
   </center>
 </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

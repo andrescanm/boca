@@ -129,6 +129,6 @@ if ($n == 0) echo "<br><center><b><font color=\"#ff0000\">NO ANSWERS DEFINED</fo
       <input type="reset" name="Submit4" value="Clear">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

@@ -78,7 +78,7 @@ for ($i=0; $i<count($run); $i++) {
 
 echo "</table>";
 if (count($run) == 0) echo "<br><center><b><font color=\"#ff0000\">NO RUNS AVAILABLE</font></b></center>";
-
+include 'include/completionBody.php';
 ?>
 </body>
 </html>

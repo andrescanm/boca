@@ -47,17 +47,7 @@ echo "<html><head><title>Report Page</title>\n";
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 
 echo "<link rel=stylesheet href=\"$loc/Css.php\" type=\"text/css\">\n";
-
-echo '<!--CSS de Bootstrap-->
-	<!------------------------------------------------------------>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<!------------------------------------------------------------>
-	<!--Estilos CSS propios-->
-	<!------------------------------------------------------------>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<!------------------------------------------------------------>
-	<!--Los estilos href="Css.php" no se incluyen por el momento ya que desconocemos la técnica de implementar CCS en un fichero .php, nos guiaremos por el contenido del modulo donde se indica que los estilos CSS van cargados desde un fichero .css-->
-	<!------------------------------------------------------------>';
+include 'include/completionHeader.php';
 
 $contest=$_SESSION["usertable"]["contestnumber"];
 if(($ct = DBContestInfo($contest)) == null)

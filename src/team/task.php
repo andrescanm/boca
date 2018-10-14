@@ -116,6 +116,6 @@ on the button above and wait.</b><br>
       <input type="submit" name="Submit" value="S.O.S." onClick="conf()">
   </center>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

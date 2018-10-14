@@ -106,7 +106,7 @@ for ($i=0; $i<count($clar); $i++) {
 
 echo "</table>";
 if (count($clar) == 0) echo "<br><center><b><font color=\"#ff0000\">NO CLARIFICATIONS AVAILABLE</font></b></center>";
-
+include 'include/completionBody.php';
 ?>
 </body>
 </html>

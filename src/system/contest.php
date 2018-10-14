@@ -209,6 +209,6 @@ for ($i=0; $i<count($cs); $i++) {
   </center>
 							<?php } else { echo "<br><br><center>Select a contest or create a new one.</center><br><br>"; } ?>
 </form>
-
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

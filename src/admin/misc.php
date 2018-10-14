@@ -197,5 +197,6 @@ if($dotransfer || $doscore || $dotransferall) {
 echo "End: " . now() . "\n";
 ?>
 </pre>
+<?php include 'include/completionBody.php';?>
 </body>
 </html>

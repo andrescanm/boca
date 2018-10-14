@@ -52,7 +52,7 @@ for ($i=0; $i<count($prob); $i++) {
 }
 echo "</table>";
 if (count($prob) == 0) echo "<br><center><b><font color=\"#ff0000\">NO PROBLEMS AVAILABLE YET</font></b></center>";
-
+include 'include/completionBody.php';
 ?>
 </body>
 </html>
