@@ -57,14 +57,20 @@ if ((isset($_GET["Submit1"]) && $_GET["Submit1"] == "Transfer") ||
 
 if(!isset($_POST['noflush'])) {
     echo "</head><body id=\"body\">";
-    echo '<div class="container"><div class="row"><div class="col-12" id="titulo"><p>';
+    echo '<div class="container">';
+    echo'<div class="row">';
+    echo '<div class="col-12" id="titulo"><p>';
 	echo "<img src=\"../images/smallballoontransp.png\" alt=\"\">";
 	echo "BOCA ";
 	echo "Username: " . $_SESSION["usertable"]["userfullname"] . " (site=".$_SESSION["usertable"]["usersitenumber"].")";
 	list($clockstr,$clocktype)=siteclock();
 	echo "&nbsp;".$clockstr."&nbsp;\n";
-	echo '</p></div></div>';
-	echo '<div class="row"><div class="col-3" id="menu"><ul class="nav flex-column">';
+	echo '</p>';
+	echo '</div><!--div.col-12-->';
+	echo '</div><!--div.row-->';
+	echo '<div class="row">';
+	echo '<div class="col-3" id="menu">';
+	echo '<ul class="nav flex-column">';
 	echo "  <li class='nav-item'><a class='nav-link' href=run.php>Runs</a></li>\n";
 	echo "  <li class='nav-item'><a class='nav-link' href=score.php>Score</a></li>\n";
 	echo "  <li class='nav-item'><a class='nav-link' href=clar.php>Clarifications</a></li>\n";
@@ -81,6 +87,8 @@ if(!isset($_POST['noflush'])) {
 	echo "  <li class='nav-item'><a class='nav-link' href=files.php>Backups</a></li>\n";
 	echo "  <li class='nav-item'><a class='nav-link' href=option.php>Options</a></li>\n";
 	echo "  <li class='nav-item'><a class='nav-link' href=$loc/index.php>Logout</a></li>\n";
-	echo '</ul></div></div>';
+	echo '</ul>';
+	echo '</div><!--div.col-3-->';
+	echo '<div class="col-9">';
 }
 ?>

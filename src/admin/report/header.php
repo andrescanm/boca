@@ -47,7 +47,7 @@ echo "<html><head><title>Report Page</title>\n";
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 
 echo "<link rel=stylesheet href=\"$loc/Css.php\" type=\"text/css\">\n";
-include 'include/completionHeader.php';
+include '../../include/completionHeader.php';
 
 $contest=$_SESSION["usertable"]["contestnumber"];
 if(($ct = DBContestInfo($contest)) == null)
