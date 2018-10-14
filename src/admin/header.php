@@ -26,8 +26,6 @@ header ("Content-Type: text/html; charset=utf-8");
 session_start();
 if(!isset($_POST['noflush']))
 	ob_end_flush();
-//$loc = $_SESSION['loc'];
-//$locr = $_SESSION['locr'];
 $loc = $locr = "..";
 $runphp = "run.php";
 $runeditphp = "runedit.php";
@@ -40,6 +38,14 @@ if(!isset($_POST['noflush'])) {
 	echo "<html><head><title>Admin's Page</title>\n";
 	echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 	echo "<link rel=stylesheet href=\"$loc/Css.php\" type=\"text/css\">\n";
+	echo '<!--CSS de Bootstrap-->
+	<!------------------------------------------------------------>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!------------------------------------------------------------>
+	<!--Estilos CSS propios-->
+	<!------------------------------------------------------------>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<!------------------------------------------------------------>';
 }
 
 if(!ValidSession()) {
@@ -57,36 +63,31 @@ if ((isset($_GET["Submit1"]) && $_GET["Submit1"] == "Transfer") ||
 }
 
 if(!isset($_POST['noflush'])) {
-	echo "</head><body id=\"body\"><table border=1 width=\"100%\">\n";
-	echo "<tr><td nowrap bgcolor=\"eeee00\" align=center>";
+    echo "</head><body id=\"body\">";
+    echo '<div class="container"><div class="row"><div class="col-12" id="titulo"><p>';
 	echo "<img src=\"../images/smallballoontransp.png\" alt=\"\">";
-	echo "<font color=\"#000000\">BOCA</font>";
-	echo "</td><td bgcolor=\"#eeee00\" width=\"99%\">\n";
-	echo "Username: " . $_SESSION["usertable"]["userfullname"] . " (site=".$_SESSION["usertable"]["usersitenumber"].")<br>\n";
+	echo "BOCA ";
+	echo "Username: " . $_SESSION["usertable"]["userfullname"] . " (site=".$_SESSION["usertable"]["usersitenumber"].")";
 	list($clockstr,$clocktype)=siteclock();
-	echo "</td><td bgcolor=\"#eeee00\" align=center nowrap>&nbsp;".$clockstr."&nbsp;</td></tr>\n";
-	echo "</table>\n";
-	echo "<table border=0 width=\"100%\" align=center>\n";
-	echo " <tr>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=run.php>Runs</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=score.php>Score</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=clar.php>Clarifications</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=user.php>Users</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=problem.php>Problems</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=language.php>Languages</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=answer.php>Answers</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=misc.php>Misc</a></td>\n";
-//echo " </tr></table><hr><table border=0 width=\"100%\" align=center><tr>\n";
-	echo " </tr><tr>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=task.php>Tasks</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=site.php>Site</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=contest.php>Contest</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=log.php>Logs</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=report.php>Reports</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=files.php>Backups</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=option.php>Options</a></td>\n";
-	echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=$loc/index.php>Logout</a></td>\n";
-	echo " </tr>\n"; 
-	echo "</table>\n";
+	echo "&nbsp;".$clockstr."&nbsp;\n";
+	echo '</p></div></div>';
+	echo '<div class="row"><div class="col-3" id="menu"><ul class="nav flex-column">';
+	echo "  <li class='nav-item'><a class='nav-link' href=run.php>Runs</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=score.php>Score</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=clar.php>Clarifications</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=user.php>Users</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=problem.php>Problems</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=language.php>Languages</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=answer.php>Answers</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=misc.php>Misc</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=task.php>Tasks</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=site.php>Site</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=contest.php>Contest</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=log.php>Logs</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=report.php>Reports</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=files.php>Backups</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=option.php>Options</a></li>\n";
+	echo "  <li class='nav-item'><a class='nav-link' href=$loc/index.php>Logout</a></li>\n";
+	echo '</ul></div></div>';
 }
 ?>

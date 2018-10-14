@@ -19,7 +19,7 @@
 
 require 'versionnum.php';
 
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n";
+echo "<!DOCTYPE html\">\n";
 echo "<!-- BOCA $BOCAVERSION. Copyright (c) 2003-$YEAR Cassio Polpo de Campos -->\n";
 echo "<!-- http://www.ime.usp.br/~cassio/boca                                  -->\n";
 echo "<!-- This program is free software: you can redistribute it and/or modify  -->\n";
