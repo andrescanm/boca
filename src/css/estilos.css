@@ -1,0 +1,141 @@
+/*-----------------*/
+/*Estilos generales*/
+/*-----------------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#titulo {
+	background-color: #4B82C3;
+	margin-top: 5px;
+	box-shadow: 2px 2px 5px #999;
+	margin-bottom: 5px;
+}
+
+#titulo > p {
+	padding: 20px 0px 0px 15px;
+	font-size: 1.0em;
+	color: #eceff1;
+	font-weight: bold;
+}
+
+#footer > p {
+	color: #1cc;
+	text-transform: capitalize;
+	font-size: 10px;
+	text-align: left;
+	margin: 5px 0px;
+}
+
+.nowrap {
+        white-space:nowrap;
+    }
+
+.mensajes-boca {
+	padding: 15px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #80deea;
+}
+
+.table {
+	margin-top: 2px;
+}
+
+.btn-report {
+	margin: 2px;
+}
+
+/*--------------------------------*/
+
+/*--------------------------------*/
+/*Estilos para la ventana de Login*/
+/*--------------------------------*/
+#frame {
+	padding: 20px;
+	border: solid 1px;
+	border-color: #ccc;
+	border-radius: 2px;
+}
+
+/*Sobre escribimos panel*/
+.panel {
+	margin-top: 30px;
+}
+
+#frame-encabezado {
+    padding: 5px 15px;
+    background-color: #4B82C3;
+}
+
+#frame-pie {
+	height: 40px;
+	padding: 1px 15px;
+	background-color: #4B82C3;
+}
+
+/*Formateamos el párrafo dentro de #frame-pie*/
+#frame-pie > p {
+	color: #ccc;
+	text-transform: capitalize;
+	font-size: 8px;
+	text-align: center;
+	margin: 10px 0px;
+}
+
+#img-user {
+	width: 96px;
+	height: 96px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#title-box {
+	text-transform: uppercase;
+	margin-top: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #4B82C3;
+}
+/*--------------------------------*/
+
+/*----------------------------------*/
+/*Estilos para el menú de navegación*/
+/*----------------------------------*/
+#menu {
+	border: solid 1px;
+	border-color: #ccc;
+	border-radius: 2px;
+}
+
+#menu > ul > li:hover, #menu>ul>li>a:hover {
+	background-color: #4B82C3;
+	font-size: 1.3em;
+	color: #FFF;
+}
+/*--------------------------------*/
+
+/*------------------------*/
+/*Estilos ventana usuarios*/
+/*------------------------*/
+#user-info-1, #user-info-2 {
+	padding: 15px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #80deea;
+}
+
+.formularios {
+	padding: 15px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+}
