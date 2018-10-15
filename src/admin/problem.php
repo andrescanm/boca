@@ -426,13 +426,43 @@ To replace the data of a problem, proceed as if it did not exist (data will be r
       <tr>
         <td width="35%" align=right>Color name:</td>
         <td width="65%">
-          <input type="text" name="colorname" value="" size="40" maxlength="100" />
+           	<select name="colorname" id="colorName">
+           		<option value="000000">Seleccione...</option>
+              	<option value="CD5C5C">IndianRed</option>
+              	<option value="FF0000">Red</option>
+              	<option value="8B0000">DarkRed</option>
+              	<option value="FFC0CB">Pink</option>
+              	<option value="FFA07A">LightSalmon</option>
+              	<option value="FF6347">Tomato</option>
+              	<option value="FF4500">OrangeRed</option>
+              	<option value="FFA500">Orange</option>
+              	<option value="FFFF00">Yellow</option>
+              	<option value="F0E68C">Khaki</option>
+              	<option value="BDB76B">DarkKhaki</option>
+              	<option value="D8BFD8">Thistle</option>
+              	<option value="EE82EE">Violet</option>
+              	<option value="FF00FF">Fuchsia</option>
+              	<option value="9966CC">Amethyst</option>
+              	<option value="800080">Purple</option>
+              	<option value="ADFF2F">GreenYellow</option>
+              	<option value="00FF00">Lime</option>
+              	<option value="00FF00">Lime</option>
+              	<option value="008000">Green</option>
+              	<option value="20B2AA">LightSeaGreen</option>
+              	<option value="008080">Teal</option>
+              	<option value="40E0D0">Turquoise</option>
+              	<option value="4682B4">SteelBlue</option>
+              	<option value="87CEEB">SkyBlue</option>
+              	<option value="0000FF">Blue</option>
+              	<option value="2F4F4F">DarkSlateGray</option>
+              	<option value="000000">Black</option>
+			</select>
         </td>
       </tr>
       <tr>
         <td width="35%" align=right>Color (RGB HTML format):</td>
         <td width="65%">
-          <input type="text" name="color" value="" size="6" maxlength="6" />
+          <input type="text" name="color" id="color" value="000000" size="6" maxlength="6" disabled/>
         </td>
       </tr>
     </table>
