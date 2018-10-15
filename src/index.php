@@ -54,8 +54,9 @@ ob_end_flush();
 require_once('version.php');
 
 ?>
-<title>BOCA Online Contest Administrator <?php echo $BOCAVERSION; ?> - Login</title>
+<html>
 <head>
+<title>BOCA Online Contest Administrator <?php echo $BOCAVERSION; ?> - Login</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel=stylesheet href="Css.php" type="text/css">
 <?php include 'include/completionHeader.php';?>
@@ -108,43 +109,49 @@ if(function_exists("globalconf") && function_exists("sanitizeVariables")) {
 ?>
 </head>
 <body onload="document.form1.name.focus()">
-<table width="100%" height="100%" border="0">
-  <tr align="center" valign="middle"> 
-    <td> 
-      <form name="form1" action="javascript:computeHASH()">
-        <div align="center"> 
-          <table border="0" align="center">
-            <tr> 
-              <td nowrap>
-                <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="+1">
-				BOCA Login</font></div>
-              </td>
-            </tr>
-            <tr>
-              <td valign="top"> 
-                <table border="0" align="left">
-                  <tr> 
-                    <td><font face="Verdana, Arial, Helvetica, sans-serif" > 
-                      Name
-                      </font></td>
-                    <td> 
-                      <input type="text" name="name">
-                    </td>
-                  </tr>
-                  <tr> 
-                    <td><font face="Verdana, Arial, Helvetica, sans-serif" >Password</font></td>
-                    <td> 
-                      <input type="password" name="password">
-                    </td>
-                  </tr>
-                </table>
-                <input type="submit" name="Submit" value="Login">
-              </td>
-            </tr>
-          </table>
-        </div>
-      </form>
-    </td>
-  </tr>
-</table>
-<?php include('footnote.php'); ?>
+<!-- Nuevo Login -->
+<div class="container">
+	<div class="row justify-content-md-center">
+		<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+			<div class="d-block mx-auto panel">
+				<div id="frame-encabezado">
+					<div id="title-box"><p><strong> BOCA Login</strong></p></div>
+				</div>
+				<div id="frame">
+					<form name="form1" role="form" action="javascript:computeHASH()" method="POST">
+						<!-- <form name="form1" action="javascript:computeHASH()"> -->
+							<fieldset>
+								<div class="row">
+									<div class="d-block mx-auto">
+										<img id="img-user" src="images/user.png" alt="">
+									</div>
+								</div>
+								<div class="row justify-content-md-center">
+									<div class="col-sm-12 col-md-10  col-md-offset-1 ">
+										<div class="form-group">
+											<div class="input-group">
+												<input class="form-control" placeholder="Your username" name="name" type="text" autofocus>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<input class="form-control" placeholder="Your password" name="password" type="password" value="">
+											</div>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-lg btn-primary btn-block" value="LOGIN">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div><!-- div.frame -->
+					<div id="frame-pie">
+						<p>Powered by BOCA boca-1.5.13. Copyright (c) 2003-2017 BOCA System (bocasystem@gmail.com). All rights reserved.</p>
+					</div><!-- div.frame-pie -->
+				</div><!-- div.d-block.mx-auto.panel -->
+			</div><!-- div.col-xs-12.col-sm-10.col-md-8.col-lg-6 -->
+		</div><!-- div.row -->
+	</div><!-- div.container -->
+<!-- Fin Nuevo Login -->
+<?php include('footnote.php');?>

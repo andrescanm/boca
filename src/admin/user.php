@@ -501,6 +501,7 @@ echo $u["userdesc"]; } ?>" size="50" maxlength="300" />
 <?php } ?>
   </center>
 </form>
+<br><br>
 <?php include 'include/completionBody.php';?>
 </body>
 </html>
