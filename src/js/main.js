@@ -20,5 +20,23 @@ todo el código JS en el presente archivo
 
 /*Document Ready*/
 $(function(){
-
+	/* problem.php
+	  
+	   Actualizar el nombre de problema con una letra de acuerdo al número
+	   de problema ingresado por el usuario.
+	*/
+	$("#problemNumber").on("keyup change",(function () {
+		let problemNumber = Number($(this).val())+64;
+        let problemName  = String.fromCharCode(problemNumber);
+        $("#problemName").val(problemName);
+    }));
+	
 });
+
+/*
+ * Actualizar campo */
+function updateShortName2(){
+	problemName = document.getElementsByName('problemnumber')[0];
+	shortname = document.getElementsByName('problemname')[0];
+	shortname.value = String.fromCharCode(Number(problemname.value)+'A'.charCodeAt()-1);
+}

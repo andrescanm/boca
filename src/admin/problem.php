@@ -373,13 +373,13 @@ To replace the data of a problem, proceed as if it did not exist (data will be r
       <tr>
         <td width="35%" align=right>Number:</td>
         <td width="65%">
-          <input type="text" name="problemnumber" value="" size="20" maxlength="20" />
+          <input type="number" min="1" max="26" name="problemnumber" id="problemNumber" value="" size="20" maxlength="2"/>
         </td>
       </tr>
       <tr>
 	 <td width="35%" align=right>Short Name (usually a letter, no spaces):</td>
         <td width="65%">
-          <input type="text" name="problemname" value="" size="20" maxlength="20" />
+          <input type="text" name="problemname" id="problemName" value="" size="20" maxlength="1" />
         </td>
       </tr>
 <!--
@@ -447,6 +447,6 @@ To replace the data of a problem, proceed as if it did not exist (data will be r
 </center>
 </form>
 <br>
-<?php include 'include/completionBody.php';?>
+<?php include '../include/completionBody.php';?>
 </body>
 </html>
