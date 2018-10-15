@@ -38,7 +38,7 @@ if (isset($_GET["delete"]) && is_numeric($_GET["delete"])) {
       }
     }
   </script>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b>Bkp #</b></td>
   <td><b>Time</b></td>

@@ -232,8 +232,8 @@ else
       }
     }
   </script>
-<br>
-<table width="100%" border=1>
+
+<table class="table table-striped table-responsive">
  <tr>
   <td nowrap><b>User #</b></td>
   <td><b>Site</b></td>
@@ -315,14 +315,14 @@ function computeHASH()
 }
 </script>
 
-<br><br><center><b>Clicking on a user number will bring the user data for edition.<br>
+<br><div class="mensajes-boca"><b>Clicking on a user number will bring the user data for edition.<br>
 To import the users, just fill in the import file field.<br>
-The file must be in the format defined in the admin's manual.</b></center>
-
+The file must be in the format defined in the admin's manual.</b></div>
+<br>
 <form name="form1" enctype="multipart/form-data" method="post" action="user.php">
   <input type=hidden name="confirmation" value="noconfirm" />
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="25%" align=right>Import file:</td>
         <td width="75%">
@@ -339,19 +339,19 @@ The file must be in the format defined in the admin's manual.</b></center>
     }
   </script>
   <center>
-      <input type="submit" name="Submit" value="Import" onClick="conf()">
-      <input type="reset" name="Submit2" value="Clear">
+      <input class="btn btn-prymary" type="submit" name="Submit" value="Import" onClick="conf()">
+      <input class="btn btn-dark" type="reset" name="Submit2" value="Clear">
   </center>
 </form>
 
   <br><br>
-  <center>
-<b>To create/edit one user, enter the data below.<br>
-Note that any changes will overwrite the already defined data.<br>
-(Specially care if you use a user number that is already existent.)<br>
-<br>
-</b>
-    <table border="0">
+  <div class="mensajes-boca">
+    <b>To create/edit one user, enter the data below.<br>
+    Note that any changes will overwrite the already defined data.<br>
+    (Specially care if you use a user number that is already existent.)<br>
+    </b>
+  </div>
+<table class="table table-striped">
 <form name="form3" action="user.php" method="post">
   <input type=hidden name="confirmation" value="noconfirm" />
   <script language="javascript">
@@ -377,17 +377,17 @@ if (isset($u)) {
     }
   </script>
    <center>
-    <table border="0">
+    <table class="table">
       <tr> 
         <td width="35%" align=right>User Site Number:</td>
         <td width="65%">
-	  <input type="text" name="usersitenumber" <?php if(!$main) echo "readonly "; echo "value=\"" . $usite . "\""; ?> size="20" maxlength="20" />
+	  <input type="number" name="usersitenumber" <?php if(!$main) echo "readonly "; echo "value=\"" . $usite . "\""; ?> size="20" maxlength="20" />
         </td>
       </tr>
       <tr> 
         <td width="35%" align=right>User Number:</td>
         <td width="65%">
-	  <input type="text" name="usernumber" value="<?php if(isset($u)) echo $u["usernumber"]; ?>" size="20" maxlength="20" />
+	  <input type="number" min="1" max="50" name="usernumber" value="<?php if(isset($u)) echo $u["usernumber"]; ?>" size="20" maxlength="20" />
         </td>
       </tr>
       <tr> 
@@ -491,11 +491,11 @@ echo $u["userdesc"]; } ?>" size="50" maxlength="300" />
     </table>
   </center>
   <center>
-      <input type="submit" name="Submit" value="Send" onClick="conf3()">
+      <input class="btn btn-primary" type="submit" name="Submit" value="Send" onClick="conf3()">
 <?php if(isset($u)) { ?>
-      <input type="submit" name="Delete" value="Delete" onClick="conf4()">
+      <input class="btn btn-danger" type="submit" name="Delete" value="Delete" onClick="conf4()">
 <?php } ?>
-      <input type="submit" name="Cancel" value="Cancel" onClick="conf5()">
+      <input class="btn btn-secondary" type="submit" name="Cancel" value="Cancel" onClick="conf5()">
 <?php if(isset($u)) { ?>
 <br><br><b>WARNING: deleting a user will completely remove EVERYTHING related to it (including runs, clarifications, etc).<b><br>
 <?php } ?>

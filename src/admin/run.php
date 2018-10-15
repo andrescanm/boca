@@ -31,7 +31,7 @@ else
 <form name="form1" method="post" action="<?php echo $runphp; ?>">
   <input type=hidden name="confirmation" value="noconfirm" />
 <br>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b><a href="<?php echo $runphp; ?>?order=run">Run #</a></b></td>
   <td><b><a href="<?php echo $runphp; ?>?order=site">Site</a></b></td>

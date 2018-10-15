@@ -95,7 +95,7 @@ if (($a = DBChiefGetClarToAnswer($clarnumber, $clarsitenumber,
 <form name="form1" method="post" action="claredit.php">
   <input type=hidden name="confirmation" value="noconfirm" />
   <center>
-    <table border="0">
+    <table class="table">
       <tr> 
         <td width="20%" align=right><b>Clarification Site:</b></td>
         <td width="80%"> 

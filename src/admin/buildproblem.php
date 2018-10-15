@@ -57,7 +57,7 @@ To build a problem package using standard script files, fill in the following fi
      }
   </script>
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="35%" align=right>Problem Fullname:</td>
         <td width="65%">
@@ -99,7 +99,7 @@ To build a problem package using standard script files, fill in the following fi
   </center>
   <center>
       <input type="submit" name="Submit5" value="Send" onClick="conf()">
-      <input type="reset" name="Submit4" value="Clear">
+      <input type="reset" name="Submit4" value="Clear" class="btn btn-secondary">
   </center>
 </center>
 </form>

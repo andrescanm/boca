@@ -309,7 +309,7 @@ if ($main && isset($_FILES["importfile"]) && isset($_POST["Submit"]) && $_POST["
     }
   </script>
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="35%" align=right>Site number:</td>
         <td width="65%">
@@ -572,7 +572,7 @@ for ($i=0; $i< $n; $i++) {
 		if($main || $site == $ct["contestlocalsite"]) {
 ?>
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
 <td nowrap width="50%" align=right>
 (Do not use this button unless really necessary)
@@ -601,7 +601,7 @@ if($main) {
 ?>
 <br><br>
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="25%" align=right>Import file:</td>
         <td width="75%">

@@ -172,7 +172,7 @@ flow. ARE YOU SURE?")) {
   </script>
   <br><br>
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="35%" align=right>Contest number:</td>
         <td width="65%">
@@ -284,7 +284,7 @@ echo $contest;
 <?php if($main) { ?>
 	  <input type="submit" name="Submit3" value="Update" onClick="conf()">
 	   <input type="submit" name="Submit3" value="Update Contest and All Sites" onClick="conf2()">
-	   <input type="reset" name="Submit4" value="Clear">
+	   <input type="reset" name="Submit4" value="Clear" class="btn btn-secondary">
 <br><br>
       <input type="submit" name="SubmitDC" value="Delete ALL clars" onClick="conf2()">
       <input type="submit" name="SubmitDR" value="Delete ALL runs" onClick="conf2()">

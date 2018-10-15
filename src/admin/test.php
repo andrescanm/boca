@@ -37,7 +37,7 @@ echo '
 <form name="form1" method="post" action="run.php">
   <input type=hidden name="confirmation" value="noconfirm" />
 <br>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b><a href="run.php?order=run">Run #</a></b></td>
   <td><b><a href="run.php?order=site">Site</a></b></td>

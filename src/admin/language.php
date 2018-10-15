@@ -58,7 +58,7 @@ if (isset($_POST["Submit3"]) && isset($_POST["langnumber"]) && is_numeric($_POST
       }
     }
   </script>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b>Language #</b></td>
   <td><b>Name</b></td>
@@ -98,7 +98,7 @@ It is NOT recommended to change anything while the contest is running.<br>
 <b>To insert/edit a language, enter the data below.<br>
 Note that any changes will overwrite the already defined data.<br><br>
 </b>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="35%" align=right>Number:</td>
         <td width="65%">
@@ -120,8 +120,8 @@ Note that any changes will overwrite the already defined data.<br><br>
     </table>
   </center>
   <center>
-      <input type="submit" name="Submit3" value="Send" onClick="conf()">
-      <input type="reset" name="Submit4" value="Clear">
+      <input type="submit" name="Submit3" value="Send" class="btn btn-primary" onClick="conf()">
+      <input type="reset" name="Submit4" value="Clear" class="btn btn-secondary">
   </center>
 </form>
 <?php include 'include/completionBody.php';?>

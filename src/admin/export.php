@@ -78,7 +78,7 @@ function computeHASH()
   <input type="hidden" name="noflush" value="noflush" />
   <input type="hidden" name="nopassword" value="false" />
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="50%" align=right>Local site number:</td>
         <td width="50%">

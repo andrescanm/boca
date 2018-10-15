@@ -40,7 +40,7 @@ if(isset($_GET["order"]) && $_GET["order"] != "") {
 }
 ?>
 <br>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b><a href="clar.php?order=clar">Clar #</a></b></td>
   <td><b><a href="clar.php?order=site">Site</a></b></td>

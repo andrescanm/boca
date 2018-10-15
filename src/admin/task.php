@@ -66,7 +66,7 @@ if (isset($_GET["done"]) && is_numeric($_GET["done"]) && isset($_GET["site"]) &&
 //      }
     }
   </script>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b><a href="task.php?order=task">Task #</a></b></td>
   <td><b>Time</b></td>

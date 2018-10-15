@@ -61,7 +61,7 @@ if (isset($_POST["Submit3"]) && isset($_POST["answernumber"]) && is_numeric($_PO
       }
     }
   </script>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b>Answer #</b></td>
   <td><b>Description</b></td>
@@ -100,7 +100,7 @@ if ($n == 0) echo "<br><center><b><font color=\"#ff0000\">NO ANSWERS DEFINED</fo
 </b>
 <form name="form1" enctype="multipart/form-data" method="post" action="answer.php">
   <input type=hidden name="confirmation" value="noconfirm" />
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="35%" align=right>Number:</td>
         <td width="65%">
@@ -125,8 +125,8 @@ if ($n == 0) echo "<br><center><b><font color=\"#ff0000\">NO ANSWERS DEFINED</fo
     </table>
   </center>
   <center>
-      <input type="submit" name="Submit3" value="Send" onClick="conf()">
-      <input type="reset" name="Submit4" value="Clear">
+      <input type="submit" name="Submit3" value="Send" class="btn btn-primary" onClick="conf()">
+      <input type="reset" name="Submit4" value="Clear" class="btn btn-secondary">
   </center>
 </form>
 <?php include 'include/completionBody.php';?>

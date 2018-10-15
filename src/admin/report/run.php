@@ -21,7 +21,7 @@ require('header.php');
 ?>
 <br>
 <center><h2>Run List</h2></center>
-<table width="100%" border=1>
+<table class="table">
  <tr>
   <td><b>#</b></td>
   <td><b>Site</b></td>

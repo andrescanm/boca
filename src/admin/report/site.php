@@ -24,7 +24,7 @@ $sitetime = DBAllSiteTime($_SESSION["usertable"]["contestnumber"], $site);
 <br />
 <center><h2>Site Start/Stop Logs</h2></center>
 
-    <table border="0">
+    <table class="table">
 <?php
 echo "        <td nowrap width=\"50%\" align=right>Start date (contest=" . dateconv($ct["conteststartdate"]) . "):</td>";
 echo "<td width=\"50%\"><b>" . dateconv($st["sitestartdate"]) . "</b></td>\n";

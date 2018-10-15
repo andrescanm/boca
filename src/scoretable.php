@@ -207,7 +207,7 @@ if($redo) {
 	$rn = DBRecentNews($_SESSION["usertable"]["contestnumber"],
 					   $_SESSION["usertable"]["usersitenumber"], $ver, $minu);
 	if(count($rn)>0 && $level>3) {
-		$strtmp .= "<table border=0><tr>";
+		$strtmp .= "<table class=\"table\"><tr>";
 		$strtmp .= "<td>News (last ${minu}'): &nbsp;</td>\n";
 		for($i=0; $i<count($rn); $i++) {
 			$strtmp .= "<td width=200>";
@@ -283,7 +283,7 @@ if($redo) {
 		}
 	}
 
-	$strtmp .= "<br>\n<table id=\"myscoretable\" width=\"100%\" border=1>\n <tr>\n  <td><b>#</b></td>\n  <td><b>User/Site</b></td>\n  <td><b>Name</b></td>\n";
+	$strtmp .= "<br>\n<table class='table' id=\"myscoretable\" width=\"100%\" border=1>\n <tr>\n  <td><b>#</b></td>\n  <td><b>User/Site</b></td>\n  <td><b>Name</b></td>\n";
 	if(!$des) {
 		if($level>0)
 			$strtmp .= "<td><b>Problems</b></td>";
