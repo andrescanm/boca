@@ -61,7 +61,7 @@ if(!isset($_POST['noflush'])) {
     echo'<div class="row">';
     echo '<div class="col-12" id="titulo"><p>';
 	echo "<img src=\"../images/smallballoontransp.png\" alt=\"\">";
-	echo "BOCA ";
+	echo " BOCA ";
 	echo "Username: " . $_SESSION["usertable"]["userfullname"] . " (site=".$_SESSION["usertable"]["usersitenumber"].")";
 	list($clockstr,$clocktype)=siteclock();
 	echo "&nbsp;".$clockstr."&nbsp;\n";

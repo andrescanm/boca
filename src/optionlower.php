@@ -72,10 +72,9 @@ function computeHASH()
 }
 </script>
 
-<br><br>
 <form name="form1" action="javascript:computeHASH()">
   <center>
-    <table border="0">
+    <table class="table">
       <tr> 
         <td width="35%" align=right>Username:</td>
         <td width="65%">
@@ -115,7 +114,7 @@ function computeHASH()
     </table>
   </center>
   <center>
-      <input type="submit" name="Submit" value="Send">
+      <input type="submit" name="Submit" class="btn btn-primary" value="Send">
   </center>
 </form>
 <?php include 'include/completionBody.php';?>

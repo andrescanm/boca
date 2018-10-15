@@ -79,8 +79,6 @@ if (isset($_POST["Submit3"]) && isset($_POST["penalty"]) && is_numeric($_POST["p
 	ForceLoad("contest.php?contest=".$_POST["contest"]);
 }
 ?>
-<br>
-
 <form name="form1" enctype="multipart/form-data" method="post" action="contest.php">
   <input type=hidden name="confirmation" value="noconfirm" />
   <script language="javascript">
@@ -102,9 +100,8 @@ if (isset($_POST["Submit3"]) && isset($_POST["penalty"]) && is_numeric($_POST["p
       }
     }
   </script>
-  <br><br>
-  <center>
-    <table border="0">
+    <center>
+    <table class="table">
       <tr>
         <td width="35%" align=right>Contest number:</td>
         <td width="65%">
@@ -203,12 +200,13 @@ for ($i=0; $i<count($cs); $i++) {
     </table>
   </center>
   <center>
-      <input type="submit" name="Submit3" value="Send" onClick="conf()">
-      <input type="submit" name="Submit3" value="Activate" onClick="conf()">
-      <input type="reset" name="Submit4" value="Clear">
+      <input type="submit" name="Submit3" class="btn btn-primary" value="Send" onClick="conf()">
+      <input type="submit" name="Submit3" class="btn btn-info" value="Activate" onClick="conf()">
+      <input type="reset" name="Submit4" class="btn btn-secundary" value="Clear">
   </center>
 							<?php } else { echo "<br><br><center>Select a contest or create a new one.</center><br><br>"; } ?>
 </form>
+<br>
 <?php include 'include/completionBody.php';?>
 </body>
 </html>

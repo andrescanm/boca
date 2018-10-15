@@ -221,7 +221,6 @@ for ($i=0; $i<count($prob); $i++) {
   }
 }
 ?>
-<br>
   <script language="javascript">
     function conf2(url) {
       if (confirm("Confirm the DELETION of the PROBLEM and ALL data associated to it?")) {
@@ -243,7 +242,7 @@ for ($i=0; $i<count($prob); $i++) {
     }
   </script>
 <form name="form0" enctype="multipart/form-data" method="post" action="problem.php">
-<table width="100%" border=1>
+<table class="table table-striped">
  <tr>
   <td><b>Problem #</b></td>
   <td><b>Short Name</b></td>
@@ -327,11 +326,11 @@ if (count($prob) == 0) echo "<br><center><b><font color=\"#ff0000\">NO PROBLEMS 
 
 ?>
 
-<br><br><center><b>Clicking on a problem number will delete it.<br>
+<br><br><center><div class="mensajes-boca"><b>Clicking on a problem number will delete it.<br>
 WARNING: deleting a problem will remove EVERYTHING related to it.<br>
 It is NOT recommended to change anything while the contest is running.<br>
 To import a problem, fill in the following fields.<br>
-To replace the data of a problem, proceed as if it did not exist (data will be replaced without removing it).</b></center>
+To replace the data of a problem, proceed as if it did not exist (data will be replaced without removing it).</b></div></center><br>
 
 <form name="form1" enctype="multipart/form-data" method="post" action="problem.php">
   <input type=hidden name="confirmation" value="noconfirm" />
@@ -370,7 +369,7 @@ To replace the data of a problem, proceed as if it did not exist (data will be r
     }
   </script>
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="35%" align=right>Number:</td>
         <td width="65%">
@@ -439,14 +438,15 @@ To replace the data of a problem, proceed as if it did not exist (data will be r
     </table>
   </center>
   <center>
-      <input type="submit" name="Submit3" value="Send" onClick="conf()">
-      <input type="reset" name="Submit4" value="Clear">
+      <input type="submit" name="Submit3" class="btn btn-primary" value="Send" onClick="conf()">
+      <input type="reset" name="Submit4" class="btn btn-dark" value="Clear">
   </center>
 
 	 <br><br><br><center>To build a problem package from files, use this link:
-      <input type="submit" name="Submit5" value="Build">
+      <input type="submit" name="Submit5" class="btn btn-secundary" value="Build">
 </center>
 </form>
+<br>
 <?php include 'include/completionBody.php';?>
 </body>
 </html>

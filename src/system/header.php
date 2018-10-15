@@ -32,7 +32,7 @@ require_once("../db.php");
 echo "<html><head><title>System's Page</title>\n";
 echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n";
 echo "<link rel=stylesheet href=\"../Css.php\" type=\"text/css\">\n";
-include 'include/completionHeader.php';
+include '../include/completionHeader.php';
 
 //echo "<meta http-equiv=\"refresh\" content=\"60\" />";
 if(!ValidSession()) {
@@ -44,21 +44,25 @@ if($_SESSION["usertable"]["usertype"] != "system") {
         ForceLoad("../index.php");
 }
 
-echo "</head><body><table border=1 width=\"100%\">\n";
-echo "<tr><td nowrap bgcolor=\"eeee00\" align=center>";
+echo "</head><body>\n";
+echo '<div class="container">';
+echo'<div class="row">';
+echo '<div class="col-12" id="titulo"><p>';
 echo "<img src=\"../images/smallballoontransp.png\" alt=\"\">";
-echo "<font color=\"#000000\">BOCA</font>";
-echo "</td><td bgcolor=\"#eeee00\" width=\"99%\">\n";
-echo "Username: " . $_SESSION["usertable"]["userfullname"] ."<br>\n";
+echo " BOCA ";
+echo "Username: " . $_SESSION["usertable"]["userfullname"] ."\n";
 list($clockstr,$clocktype)=siteclock();
-echo "</td><td bgcolor=\"#eeee00\" align=center nowrap>&nbsp;".$clockstr."&nbsp;</td></tr>\n";
-echo "</table>\n";
-echo "<table border=0 width=\"100%\" align=center>\n";
-echo " <tr>\n";
-echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=contest.php>Contest</a></td>\n";
-//echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=importxml.php>Import</a></td>\n";
-echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=option.php>Options</a></td>\n";
-echo "  <td align=center><a class=menu style=\"font-weight:bold\" href=../index.php>Logout</a></td>\n";
-echo " </tr>\n"; 
-echo "</table>\n";
+echo "&nbsp;".$clockstr."&nbsp;\n";
+echo '</p>';
+echo '</div><!--div.col-12-->';
+echo '</div><!--div.row-->';
+echo '<div class="row">';
+echo '<div class="col-3" id="menu">';
+echo '<ul class="nav flex-column">';
+echo "  <li class='nav-item'><a class='nav-link' href=contest.php>Contest</a></li>\n";
+echo "  <li class='nav-item'><a class='nav-link' href=option.php>Options</a></li>\n";
+echo "  <li class='nav-item'><a class='nav-link' href=../index.php>Logout</a></li>\n";
+echo '</ul>';
+echo '</div><!--div.col-3-->';
+echo '<div class="col-9">';
 ?>

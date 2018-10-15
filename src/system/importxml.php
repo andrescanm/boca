@@ -188,7 +188,7 @@ function computeHASH()
 <form name="form1" enctype="multipart/form-data" method="post" action="importxml.php">
   <input type=hidden name="confirmation" value="noconfirm" />
   <center>
-    <table border="0">
+    <table class="table">
       <tr>
         <td width="50%" align=right>Local site number:</td>
         <td width="50%">

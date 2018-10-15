@@ -53,7 +53,7 @@ A.disabled {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12pt; t
 A.form {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12pt; background-color:<?php echo $cormenu?>} 
 BODY {background-color:<?php echo $corfundo?>; font-family:"Courier new", monospace; font-size:12pt; color:<?php echo $corfrente?>} 
 BODY.cline {background-color:#000000; color:#FFFFFF} 
-TABLE { font-family:"Courier New", Courier, mono; font-size:12pt } 
+TABLE { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12pt } 
 TABLE.form { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12pt } 
 FORM { font-size:12pt;} 
 FORM.alt { font-size:12pt; margin-top: 5px } 
